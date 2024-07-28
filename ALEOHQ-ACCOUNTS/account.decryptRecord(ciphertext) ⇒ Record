@@ -1,0 +1,3 @@
+let account = new Account();
+let record = account.decryptRecord("record1ciphertext");
+

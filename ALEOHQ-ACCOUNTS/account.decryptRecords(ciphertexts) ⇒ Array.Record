@@ -1,0 +1,2 @@
+let account = new Account();
+let record = account.decryptRecords(["record1ciphertext", "record2ciphertext"]);

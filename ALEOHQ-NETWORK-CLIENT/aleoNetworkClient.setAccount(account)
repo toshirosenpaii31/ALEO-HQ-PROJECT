@@ -1,0 +1,6 @@
+let account = new Account();
+connection.setAccount(account);
+git config --global user.email zaldyjay31@gmail.com
+  git config --global user.name toshirosenpaii31
+
+  

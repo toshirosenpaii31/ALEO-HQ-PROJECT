@@ -1,0 +1,15 @@
+// Create a connection to the Aleo network and an account
+let connection = new NodeConnection("vm.aleo.org/api");
+let account = Account.fromCiphertext("ciphertext", "password");
+
+// Get a record from the network
+let record = connection.getBlock(1234);
+let recordCipherText = record.transactions[0].execution.transitions[0].id;
+
+// Check if the account owns the record
+if account.ownsRecord(recordCipherText) {
+    // Then one can do something like:
+    // Decrypt the record and check if it's spent
+    // Store the record in a local database
+    // Etc.
+}
